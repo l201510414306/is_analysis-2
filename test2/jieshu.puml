@@ -1,0 +1,10 @@
+@startuml
+:图书管理员: as Admin
+:借阅者: as User
+left to right direction
+rectangle {
+Admin -->(借出图书)
+(超期罚款).>(借出图书):<<extends>>
+(借出图书) <--User
+}
+@enduml
