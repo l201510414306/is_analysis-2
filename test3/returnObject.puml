@@ -1,0 +1,8 @@
+@startuml
+object 归还书籍{
+  BookNo=2111111
+  PersonNo=201510414330
+  ReturnTime=2018-04-17
+  Fine=0
+}
+@enduml

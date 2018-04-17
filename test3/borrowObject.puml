@@ -1,0 +1,8 @@
+@startuml
+object 借出书籍{
+    BookNo=2111111
+    PersonNo=201510414330
+    LendTime=2018-04-15
+    LeastTime=2018-06-15
+}
+@enduml
