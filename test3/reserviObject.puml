@@ -1,7 +1,0 @@
-@startuml
-object 预约书籍{
-    BookNo=2111111
-    PersonNo=201510414330
-    BookingTime=2018-4-10
-}
-@enduml
