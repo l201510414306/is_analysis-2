@@ -1,8 +1,0 @@
-@startuml
-object 借阅者{
-    PersonNo=201510414330
-    Password=123321
-    Name=zhuliang
-    PersonInfo=软工三班
-}
-@enduml
