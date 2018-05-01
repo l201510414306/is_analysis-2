@@ -1,0 +1,32 @@
+@startuml
+            skinparam sequenceArrowThickness 2
+            skinparam roundcorner 20
+            skinparam maxmessagesize 60
+            skinparam sequenceParticipant underline
+
+            actor ":Borrower" as User
+            actor ":Libranian" as Lib
+            participant "LendBookWindow" as A
+            participant ":Book" as B
+            participant ":Loan" as C
+            activate A
+            activate B
+            activate C
+            User -> Lib: 1.提交图书证和书籍
+            deactivate C
+            activate User
+            activate Lib
+            Lib -> A: 1.1 借出图书
+            A -> B: 1.1.1 选择图书
+            B --> A: 1.1.1.1  书本信息
+            A -> C: 1.1.2  添加借阅图书信息
+            deactivate B
+            activate C
+            C -> C:1.1.2.1 检查借阅书籍信息
+            C --> A: 1.1.2.2  添加借阅信息消息
+            deactivate C
+            A -->Lib:1.1.3 显示借阅信息消息
+            Lib -->User:1.2 归还书籍和图书证
+            deactivate Lib
+            deactivate User
+        @enduml

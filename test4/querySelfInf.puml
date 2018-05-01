@@ -1,0 +1,28 @@
+@startuml
+           skinparam sequenceArrowThickness 2
+           skinparam roundcorner 20
+           skinparam maxmessagesize 60
+           skinparam sequenceParticipant underline
+
+           actor ":Borrower" as User
+           participant "LoginWindow" as A
+           participant "PersonInfoWindow" as B
+           actor ":Borrower" as C
+             activate A
+             activate B
+             activate User
+           User -> A: 登录系统
+           activate C
+           A -> C: 1.2 实例化借阅者对象
+           C --> B: 1.2.1 返回借阅者信息
+           deactivate User
+           deactivate C
+           B --> User: 1.2.1.1 显示借阅者信息
+           activate User
+           deactivate User
+           deactivate B
+           A --> User: 1.1 登录信息
+           activate User
+           deactivate User
+           destroy A
+       @enduml
