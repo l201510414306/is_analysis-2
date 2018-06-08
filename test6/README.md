@@ -23,8 +23,6 @@
 - 每个实验的实验成绩细分为多个评分项，每个评分项对应各自的评分标准。
 ## 2. 系统总体结构
 ![](系统结构图.png)
-
-界面设计参见：https://github.com/201510414330/is_analysis/edit/master/test6/系统结构图.png
     
 ## 3. 用例图设计 [源码](src/UseCase.puml)
 ![](UseCase.png)
